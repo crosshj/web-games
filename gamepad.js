@@ -1,4 +1,4 @@
-if(!navigator.getGamepads){
+if(navigator.getGamepads){
   var message = "gamepad api IS supported";
   var node = document.createElement("div");
   var textnode = document.createTextNode(message);
