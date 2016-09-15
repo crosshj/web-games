@@ -60,14 +60,13 @@
 				window.clearInterval(repGP);
 			});
 
-			//setup an interval for Chrome
-			var checkGP = window.setInterval(function() {
-				console.log('checkGP');
+			function gameLoop() {
 				if(navigator.getGamepads()[0]) {
-					if(!hasGP) $(window).trigger("gamepadconnected");
-					window.clearInterval(checkGP);
+					$(window).trigger("gamepadconnected");
 				}
-			}, 500);
+				requestAnimationFrame(gameLoop);
+			};
+			gameLoop();
 		}
 		
 	});
