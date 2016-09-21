@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0px;
+  background-color: antiquewhite;
+}
+
+#gameInfo {
+  position: absolute;
+  border: 1px solid black;
+  right: 5px;
+  top: 5px;
+  padding: 10px;
+  min-width: 26em;
+  min-height: 15em;
+  background-color: #fffbf6;
+}
